@@ -1,0 +1,226 @@
+/* FONT */
+
+@font-face{
+font-family:"TheSeasons";
+src:url("fonts/the-seasons-regular.ttf") format("truetype");
+}
+
+
+
+/* BODY */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background-image:url("background.png");
+background-size:cover;
+background-position:center;
+}
+
+
+
+/* NAVBAR */
+
+nav{
+background:black;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 40px;
+}
+
+.logo{
+width:45px;
+}
+
+.nav-links{
+list-style:none;
+display:flex;
+gap:40px;
+margin:0;
+}
+
+/* NEW NAV LINK STYLE */
+
+.nav-links a{
+text-decoration:none;
+color:#e3b84a;
+font-size:18px;
+padding:8px 18px;
+border-radius:20px;
+transition:0.3s;
+}
+
+/* When cursor is near */
+.nav-links a:hover{
+background:#e3b84a;
+color:black;
+}
+
+/* Active page stays yellow */
+.nav-links a.active{
+background:#e3b84a;
+color:black;
+}
+
+
+
+/* HEADER */
+
+.header{
+text-align:center;
+padding:0 0 30px;
+}
+
+.notice{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+width:100%;
+margin:0 0 36px;
+padding:8px 30px;
+background:linear-gradient(180deg, #fffdf6 0%, #f3ead2 100%);
+border-top:1px solid rgba(156, 31, 20, 0.12);
+border-bottom:1px solid rgba(156, 31, 20, 0.18);
+box-shadow:0 6px 14px rgba(0, 0, 0, 0.06);
+font-size:15px;
+line-height:1.5;
+color:#2b2118;
+box-sizing:border-box;
+}
+
+.notice a{
+color:#9c1f14;
+font-weight:bold;
+text-decoration:none;
+}
+
+.notice a:hover{
+text-decoration:underline;
+}
+
+
+
+/* MAIN TITLE */
+
+h1{
+font-family:"TheSeasons", serif;
+font-size:60px;
+letter-spacing:2px;
+margin:10px 30px 0;
+}
+
+h1 span{
+color:#9c1f14;
+}
+
+.plain-hyphen{
+font-family:Arial, Helvetica, sans-serif;
+color:#000;
+}
+
+
+
+/* DESCRIPTION */
+
+.description{
+max-width:720px;
+margin:auto;
+font-size:16px;
+color:#333;
+line-height:1.6;
+padding:0 30px;
+box-sizing:border-box;
+}
+
+
+
+/* FEATURES */
+
+.features{
+display:flex;
+justify-content:center;
+gap:80px;
+margin-top:45px;
+}
+
+
+
+/* CARDS */
+
+.card{
+width:250px;
+background:#f4ecd6;
+border-radius:25px;
+padding:70px 20px 30px;
+text-align:center;
+position:relative;
+box-shadow:0 6px 0 #8e1b13;
+}
+
+.card.red{
+background:#9c1f14;
+color:white;
+box-shadow:0 6px 0 #f4ecd6;
+}
+
+
+
+/* CIRCULAR IMAGE */
+
+.circle-img{
+width:140px;
+height:140px;
+border-radius:50%;
+object-fit:cover;
+position:absolute;
+top:-70px;
+left:50%;
+transform:translateX(-50%);
+border:8px solid white;
+}
+
+
+
+/* CARD TITLES */
+
+.card h3{
+font-family:"TheSeasons", serif;
+font-size:22px;
+letter-spacing:1px;
+margin:34px 0 14px;
+}
+
+.card p{
+margin:0;
+line-height:1.6;
+}
+
+
+
+/* ORDER BUTTON */
+
+.order-section{
+text-align:center;
+margin:45px 60px 60px;
+}
+
+.order-btn{
+background:#f2b705;
+border:none;
+padding:16px 50px;
+font-size:20px;
+border-radius:40px;
+font-weight:bold;
+cursor:pointer;
+transition:.3s;
+}
+
+.order-btn:hover{
+background:#d79e00;
+}
+
+.features{
+margin-top:52px;
+}
