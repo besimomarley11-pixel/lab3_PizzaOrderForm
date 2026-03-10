@@ -23,8 +23,11 @@ lab3_PizzaOrderForm
    - onions.png
    - pepperoni.png
    - pineapple.png
+   - freshly-baked.png 
 
-  
+
+- fonts/
+   - the-seasons-regular.ttf
 - css/
    - style.css
 
