@@ -244,20 +244,21 @@ footer{
     margin-left:auto;
     margin-right:auto;
     font-family:"Poppins", sans-serif;
+    margin-bottom:45px;
 }
 
 .chef-container{
     display:flex;
     justify-content:center;
     gap:80px;
-    margin-top:80px;
+    margin-top:100px;
     flex-wrap:wrap;
 }
 
 .chef-card{
     background:#e6dfcf;
-    width:260px;
-    padding:60px 20px 30px;
+    width:220px;
+    padding:40px 16px 18px;
     border-radius:30px;
     position:relative;
     color:black;
@@ -291,19 +292,23 @@ footer{
 }
 
 .chef-card h3{
-    margin-top:15px;
+    margin-top:44px;
+    margin-bottom:8px;
     font-size:20px;
 }
 
 .stat{
     font-size:24px;
     font-weight:700;
-    margin-top:10px;
+    margin-top:6px;
+    margin-bottom:4px;
 }
 
 .label{
     font-size:14px;
     font-family:"Poppins", sans-serif;
+    margin-top:0;
+    margin-bottom:6px;
 }
 
 /*****************PERSONAL DETAILS SECTION******************/
