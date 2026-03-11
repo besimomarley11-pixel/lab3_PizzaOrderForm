@@ -1,0 +1,427 @@
+/* FONT */
+
+@font-face{
+font-family:"Track";
+src:url("fonts/Track-regular.ttf") format("truetype");
+}
+
+
+
+/* BODY */
+
+body{
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+}
+
+/*****************INDEX PAGE SECTION******************/
+
+/* NAVBAR */
+
+header{
+    background:black;
+}
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 60px;
+}
+
+.logo{
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.logo img{
+width:40px;
+height:auto;
+}
+
+.logo span{
+color:white;
+font-size:18px;
+font-weight:600;
+}
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:40px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#f2c200;
+    font-size:18px;
+}
+
+nav ul li a:hover{
+    font-weight: bold;
+    color:#f2c200;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+height:85vh;
+background:url("../assets/home-bg.png");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:flex;
+text-align: center;
+}
+
+.hero-text{
+max-width:auto;
+margin-top: 8%;
+margin-left: 300px;
+}
+
+.hero h1{
+font-size:70px;
+font-weight:700;
+line-height:1.1;
+color: #ffff;
+}
+
+.hero h1 span{
+color:#f5c400;
+}
+
+.hero p{
+margin-top:25px;
+font-size:22px;
+color:#ddd;
+margin-left: 250px;
+}
+
+
+/* BUTTON */
+
+.order-btn{
+    position: absolute;
+    padding:10px 20px;
+    border:none;
+    border-radius:40px;
+    background:#f5c400;
+    font-size:20px;
+    cursor:pointer;
+    font-weight:500;
+    text-decoration: none;
+    color: black;
+    top: 65%;
+    left: 60%;
+}
+
+.order-btn:hover{
+    background:#ffcf2e;
+}
+
+/* FOOTER */
+footer{
+    margin-top: auto;
+    background:#e6e6e6;
+    text-align:center;
+    padding:0px;
+}
+
+.subtext a{
+    color:#d4a000;
+    text-decoration:underline;
+}
+
+/*****************ABOUT US SECTION******************/
+.about-section{
+    min-height:85vh;
+    background-image:url("../assets/background.png");
+    background-size:cover;
+    background-position:center;
+    align-items: center;
+    text-align: center;
+    color:white;
+}
+
+.about-header h1{
+    font-size:60px;
+    font-weight:700;
+    margin-left: 10px;
+}
+
+.about-header span{
+    color:#f5c400;
+}
+
+.about-header p{
+    margin-top:15px;
+    font-size:18px;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.chef-container{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    margin-top:80px;
+    flex-wrap:wrap;
+}
+
+.chef-card{
+    background:#e6dfcf;
+    width:260px;
+    padding:60px 20px 30px;
+    border-radius:30px;
+    position:relative;
+    color:black;
+    box-shadow:0 10px 0 #b31405;
+}
+
+.chef-card.highlight{
+    background:#b31405;
+    color:white;
+}
+
+.chef-img{
+    position: absolute;
+    top: -70px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chef-img img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.chef-card h3{
+    margin-top:15px;
+    font-size:20px;
+}
+
+.stat{
+    font-size:24px;
+    font-weight:700;
+    margin-top:10px;
+}
+
+.label{
+    font-size:14px;
+}
+
+/*****************PERSONAL DETAILS SECTION******************/
+
+.pd-container{
+    min-height:100vh;
+    background-image:url("../assets/order-form_background.png");
+    background-size:cover;
+    background-position:center;
+}
+
+h1{
+    color:#f4c400;
+    font-size:50px;
+    margin-top: 60px;
+    margin-bottom:10px;
+    padding-left: 215px;
+}
+
+h2{
+color:white;
+margin-left:80px;
+margin-bottom:20px;
+padding-left: 150px;
+}
+
+.form-box{
+    background: #fff;;
+    border-radius:10px;
+    min-width:20px;
+    min-height: 50vh;
+    max-width: 1000px;   
+    width: 100%;         
+    margin: 0 auto;     
+    padding: 50px;
+}
+
+.form-box h2{
+    font-style:italic;
+    margin-bottom:30px;
+}
+
+.row{
+    display:flex;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+label{
+    width:200px;
+    font-size:18px;
+}
+
+label span{
+    color:red;
+}
+
+input{
+    padding:10px;
+    border-radius:5px;
+    border:2px solid #777;
+    width:485px;
+}
+
+.name-fields{
+    display:flex;
+    gap:20px;
+}
+
+.name-fields input{
+    width:220px;
+}
+
+.buttons{
+    display:flex;
+    justify-content:flex-end;
+    gap:15px;
+}
+
+button{
+    padding:10px 20px;
+    border-radius:6px;
+    border:none;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.reset{
+    background:none;
+    color:#0066cc;
+    text-decoration: none;
+}
+
+.back{
+    background:white;
+    border:2px solid #0066cc;
+    border-radius: 3px;
+    box-shadow: 0 0 0 0.5px #d1d8de;
+    color:#0066cc;
+    text-decoration: none;
+}
+
+.next{
+    background:#2f7ed8;
+    color:white;
+    text-decoration: none;
+    border: 3px;
+}
+
+/*******************TOPPINGS SECTION*******************/
+
+.breadcrumb{
+color:white;
+margin-left:80px;
+margin-bottom:20px;
+padding-left: 150px;
+}
+
+.form-container{
+padding-top:30px;
+}
+
+.box{
+    background: #fff;
+    border-radius:10px;
+    min-width:20px;
+    max-height: 500px;
+    max-width: 900px;   
+    width: 100%;         
+    margin: 0 auto;     
+    padding: 50px;
+}
+
+.h2{
+margin-bottom:5px;
+color: black;
+font-weight: bold;
+padding-top: 0%;
+font-size: 20px;
+text-align: left;
+margin-left: 0%;
+}
+
+.h2 span{
+color:red;
+}
+
+.offer{
+color:gray;
+font-style:italic;
+margin-bottom:30px;
+}
+
+.toppings{
+display:flex;
+justify-content:left;
+gap:300px;
+}
+
+.column label{
+display:flex;
+align-items:center;
+gap:15px;
+margin-bottom:25px;
+font-size:18px;
+}
+
+.column img{
+width:60px;
+}
+
+input[type="checkbox"]{
+width:18px;
+height:18px;
+}
+
+.buttons{
+text-align:right;
+margin-top:30px;
+}
+
+.buttons a{
+margin-right:20px;
+color:#2a7de1;
+text-decoration:none;
+}
+
+button{
+padding:8px 18px;
+border-radius:6px;
+font-size:15px;
+cursor:pointer;
+}
+
+.back{
+border:2px solid #2a7de1;
+background:white;
+color:#2a7de1;
+}
