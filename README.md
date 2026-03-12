@@ -36,7 +36,7 @@ lab3_PizzaOrderForm
   - white.png
 - css/
   - style.css
-- index.html
+- pizza_order.html
 - about-us.html
 - order-form.html
 - README.md
@@ -44,12 +44,12 @@ lab3_PizzaOrderForm
   
 ## How To Run/Access
 1. Open the project folder in VS Code or any IDE.
-2. Start a local server, open `index.html`.
+2. Start a local server, open `pizza_order.html`.
 3. Open browser:
-   - `http://localhost:5500/index.html`
+   - `http://localhost:5500/pizza_order.html`
 
 ## Page Access Flow
-- `index.html` -> Home page
+- `pizza_order.html` -> Home page
 - `about us.html` -> About Us page
 - `order-form.html` -> Order Form page
 - Use the navigation bar at the top of each page to move between sections.
