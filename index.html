@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pizza Order Form</title>
+<title>Pizza by the Slice</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -15,43 +15,76 @@
 
 </head>
 
-<body>
-
-<!-- NAVBAR -->
+<body class="page-home">
 <header>
     <div class="navbar">
-
         <div class="logo">
             <img src="assets/pizza-logo.png" alt="logo">
             <span>PIZZA BY THE SLICE</span>
         </div>
-
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about-us.html">About Us</a></li>
-                <li><a href="personal-details.html">Order Form</a></li>
+                <li><a href="order-form.html">Order Form</a></li>
             </ul>
         </nav>
-
     </div>
 </header>
 
 <section class="hero">
     <div class="hero-text">
-
         <h1>
             FRESH, <span>HOT PIZZAS</span><br>
             <span class="hero-line-wide">THAT HIT THE SPOT RIGHT</span>
         </h1>
-
         <p>
             Serving Up Crispy Crusts and Savory<br>
             Toppings From Our Mobile Oven, Right Where You Are
         </p>
+       <a href="#about" class="order-btn">Get Started!</a>
+    </div>
+</section>
 
-       <a href="page-2.html" class="order-btn">Order Now</a>
+<!-- ABOUT SECTION -->
+<section id="about" class="about-section">
+    <div class="about-header">
+        <h1>WOOD-FIRED <span>FLAVORS</span></h1>
+        <p>
+            Serving PIZZA by the SLICE brings handcrafted, mouthwatering deep dish pizza straight to you.
+            Our mobile kitchen means fresh, hot bites wherever you are. We combine traditional methods
+            with bold flavors for a pizza experience you won’t forget.
+        </p>
+    </div>
 
+    <div class="chef-container">
+        <div class="chef-card">
+            <div class="chef-img">
+                <img src="assets/freshly-baked.png">
+            </div>
+            <h3>FRESHLY BAKED</h3>
+            <p class="label">Every pizza is made-to-order in our mobile wood-fired oven.</p>
+        </div>
+
+        <div class="chef-card highlight">
+            <div class="chef-img">
+                <img src="assets/flavorful.png">
+            </div>
+            <h3>FLAVORFUL</h3>
+            <p class="label">Bold flavors in every slice, crafted with premium ingredients.</p>
+        </div>
+
+        <div class="chef-card">
+            <div class="chef-img">
+                <img src="assets/fast-delivery.png">
+            </div>
+            <h3>FAST DELIVERY</h3>
+            <p class="label">Hot, delicious pizza delivered to your door in no time.</p>
+        </div>
+    </div>
+
+    <div class="order-section">
+        <a class="order-btn" href="order-form.html">Order Now!</a>
     </div>
 
 </section>
@@ -59,7 +92,7 @@
 <footer>
     <div class="subtext">
         <p>
-            <a href="#">Shop online</a> for free delivery. Call us at 09271915696 or visit <a href="#">support</a>.
+            <a href="#">Shop online</a> for free delivery. Call us at 09271915696.</a>.
         </p>
     </div>
 </footer>
