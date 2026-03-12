@@ -1,14 +1,4 @@
-/* FONT */
-
-@font-face{
-font-family:"Track";
-src:url("fonts/Track-regular.ttf") format("truetype");
-}
-
-
-
 /* BODY */
-
 body{
 margin:0;
 font-family:"Poppins", sans-serif;
@@ -17,10 +7,7 @@ display: flex;
 flex-direction: column;
 }
 
-/*****************INDEX PAGE SECTION******************/
-
 /* NAVBAR */
-
 header{
     background:black;
     box-sizing:border-box;
@@ -102,19 +89,28 @@ nav ul li a{
     padding:6px 0;
 }
 
+.nav-compact .about-section{
+    min-height:calc(100vh - 60px);
+}
+
 nav ul li a:hover{
     font-weight: bold;
     color:#f2c200;
 }
 
-
-/* HERO SECTION */
+.page-home nav a[href="index.html"],
+.page-about nav a[href="about-us.html"],
+.page-order nav a[href="order-form.html"]{
+    font-weight:700;
+}
 
 .hero{
 height:85vh;
 background:url("../assets/home-bg.png");
 background-size:cover;
 background-position:center;
+min-height: calc(100vh - 70px);
+height: auto;
 display:flex;
 align-items:center;
 justify-content:flex;
@@ -165,9 +161,6 @@ font-family:"Poppins", sans-serif;
 line-height:1.4;
 }
 
-
-/* BUTTON */
-
 .order-btn{
     position: static;
     padding:10px 20px;
@@ -191,12 +184,16 @@ line-height:1.4;
     background:#ffcf2e;
 }
 
-/* FOOTER */
 footer{
     margin-top: auto;
     background:#fff;
     text-align:center;
     padding:4px 0;
+}
+
+.subtext p{
+    margin:0;
+    line-height:1.5;
 }
 
 .subtext a{
@@ -209,125 +206,12 @@ footer{
     font-family:"Poppins", sans-serif;
 }
 
-/*****************DRAFT PAGE 2******************/
-.draft-page{
-    background:url("../assets/background.png") center/cover no-repeat fixed;
-    color:#f5f5f5;
-}
-
-.draft-page .header{
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-    min-height:300px;
-    padding:25px 20px 10px;
-}
-
-.draft-page .header h1{
-    font-size:52px;
-    letter-spacing:2px;
-    margin:0 0 12px;
-    color:#fff;
-    text-align:left;
-    max-width:720px;
-    width:100%;
-    padding-left:100px;
-}
-
-.draft-page .header h1 span{
-    color:#f5c400;
-}
-
-.draft-page .header h1 .plain-hyphen{
-    color:#fff !important;
-}
-
-.draft-page .description{
-    max-width:720px;
-    margin:0 auto;
-    font-size:18px;
-    line-height:1.5;
-    color:#e9e9e9;
-    font-family:"Poppins", sans-serif;
-    margin-top:6px;
-    margin-bottom:35px;
-}
-
-.draft-page .features{
-    display:flex;
-    justify-content:center;
-    gap:40px;
-    padding:10px 20px 40px;
-    flex-wrap:wrap;
-}
-
-.draft-page .card{
-    position:relative;
-    background:#f7f1e6;
-    color:#141414;
-    width:230px;
-    padding:60px 18px 22px;
-    border-radius:26px;
-    text-align:center;
-    box-shadow:0 8px 0 #b31405;
-}
-
-.draft-page .card.red{
-    background:#a61c10;
-    color:#fff;
-}
-
-.draft-page .circle-img{
-    width:150px;
-    height:150px;
-    border-radius:50%;
-    object-fit:cover;
-    border:10px solid #fff;
-    position:absolute;
-    top:-70px;
-    left:50%;
-    transform:translateX(-50%);
-    background:#fff;
-}
-
-.draft-page .card h3{
-    font-size:20px;
-    margin:34px 0 8px;
-    letter-spacing:1px;
-    font-family:"Poppins", sans-serif;
-}
-
-.draft-page .card p{
-    margin:0;
-    font-size:15px;
-    line-height:1.4;
-    font-family:"Poppins", sans-serif;
-}
-
-.draft-page .order-section{
-    text-align:center;
-    padding-bottom:30px;
-}
-
-.draft-page footer{
-    background:#fff;
-    color:#333;
-    text-align:center;
-    padding:4px 0;
-}
-
-.draft-page footer .subtext a{
-    color:#d4a000;
-}
-
-/*****************ABOUT US SECTION******************/
 .about-section{
-    min-height:85vh;
     background-image:url("../assets/background.png");
+    min-height: calc(100vh - 70px);
     background-size:cover;
     background-position:center;
+    padding-bottom:20px;
     align-items: center;
     text-align: center;
     color:white;
@@ -429,13 +313,13 @@ footer{
     margin-bottom:6px;
 }
 
-/*****************PERSONAL DETAILS SECTION******************/
-
+/* PERSONAL DETAILS SECTION */
 .pd-container{
     min-height:100vh;
     background-image:url("../assets/order-form_background.png");
     background-size:cover;
     background-position:center;
+    padding-bottom:60px;
 }
 
 h1{
@@ -457,11 +341,31 @@ padding-left: 150px;
     background: #fff;;
     border-radius:10px;
     min-width:20px;
-    min-height: 26vh;
-    max-width: 1000px;   
-    width: 55%;         
+    min-height: 520px;
+    max-width: 1100px;   
+    width: 70%;         
     margin: 0 auto;     
     padding: 30px;
+    display:flex;
+    flex-direction:column;
+}
+
+.step-toggle{
+    position:absolute;
+    opacity:0;
+    pointer-events:none;
+}
+
+.form-step{
+    display:none;
+}
+
+#step-personal:checked ~ .form-step[data-step="personal"],
+#step-pizza:checked ~ .form-step[data-step="pizza"],
+#step-toppings:checked ~ .form-step[data-step="toppings"],
+#step-fulfillment:checked ~ .form-step[data-step="fulfillment"],
+#step-summary:checked ~ .form-step[data-step="summary"]{
+    display:block;
 }
 
 .form-box h2{
@@ -478,10 +382,17 @@ padding-left: 150px;
     z-index:1;
 }
 
+.form-body{
+    display:flex;
+    flex-direction:column;
+    flex:1;
+    gap:12px;
+}
+
 .row{
     display:flex;
     align-items:center;
-    margin-bottom:14px;
+    margin-bottom:50px;
 }
 
 label{
@@ -515,17 +426,17 @@ input[type="number"]{
 
 .name-fields{
     display:flex;
-    gap:20px;
-    width:520px;
+    gap:12px;
+    width:505px;
 }
 
 .name-fields input{
-    width:240px;
+    width:246px;
 }
 
 .name-fields input:first-child{
-    width:200px;
-    margin-left:20px;
+    width:246px;
+    margin-left:0;
 }
 
 .buttons{
@@ -534,20 +445,34 @@ input[type="number"]{
     gap:15px;
     width:100%;
     padding-right:20px;
+    margin-top:auto;
 }
 
-.buttons a{
-    display:inline-block;
+.buttons a,
+.buttons label,
+.buttons button{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-width:120px;
+    height:38px;
     line-height:1;
-    padding:6px 12px;
+    padding:0 16px;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:700;
+    box-sizing:border-box;
+    font-size:15px;
 }
 
+.buttons .next,
+.buttons .back,
+.buttons .reset{
+    width:50px;
+    height:38px;
+}
 button{
-    padding:10px 20px;
-    border-radius:6px;
     border:none;
-    cursor:pointer;
-    font-weight:bold;
 }
 
 .reset{
@@ -579,21 +504,27 @@ button{
     letter-spacing:0.5px;
 }
 
-/*******************PIZZA SELECTION SECTION*******************/
-
+/* PIZZA SELECTION SECTION */
 .ps-box{
     width: 70%;
     max-width: 1100px;
 }
 
+.ps-body{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    flex:1;
+}
+
 .ps-section{
-    margin-bottom:24px;
+    margin-bottom:10px;
 }
 
 .ps-label{
     font-size:22px;
     font-weight:500;
-    margin-bottom:10px;
+    margin-bottom:0 !important;
     color:#111;
 }
 
@@ -606,7 +537,8 @@ button{
     justify-content:center;
     gap:40px;
     flex-wrap:nowrap;
-    margin-top:10px;
+    margin:0 !important;
+    padding:0 !important;
 }
 
 .ps-size{
@@ -650,9 +582,8 @@ button{
 
 .ps-selects{
     display:flex;
-    gap:40px;
-    flex-wrap:wrap;
-    align-items:flex-start;
+    gap:10px;
+    margin-top:5px;
 }
 
 .ps-select-group{
@@ -672,7 +603,7 @@ button{
     margin-top:10px;
 }
 
-/*******************FULFILLMENT & PAYMENT*******************/
+/* FULFILLMENT & PAYMENT */
 
 .fp-box{
     width: 70%;
@@ -759,7 +690,120 @@ button{
     margin-top:6px;
 }
 
-/*******************TOPPINGS SECTION*******************/
+/* ORDER SUMMARY */
+
+.os-box{
+    width: 70%;
+    max-width: 1100px;
+}
+
+.os-table-wrap{
+    margin-top:10px;
+}
+
+.os-table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:18px;
+}
+
+.os-table thead th{
+    background:#000;
+    color:#fff;
+    text-align:left;
+    padding:12px 18px;
+    font-weight:700;
+}
+
+.os-table tbody td{
+    padding:10px 18px;
+    border-bottom:1px solid #e5e5e5;
+}
+
+.os-table tbody tr.highlight{
+    background:#fff8b8;
+}
+
+.os-total{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    border-top:1px solid #111;
+    padding-top:16px;
+    margin-top:18px;
+    font-size:28px;
+    font-weight:700;
+}
+
+.os-total-label{
+    min-width:200px;
+}
+
+.os-buttons{
+    margin-top:100px;
+    justify-content:flex-end;
+    padding-right:20px;
+}
+
+.os-buttons .submit{
+    background:#2f7d2f;
+    border:2px solid #1f5f1f;
+}
+
+.modal-backdrop{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.5);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    z-index:999;
+}
+
+.modal-backdrop:target{
+    display:flex;
+}
+
+.modal-card{
+    background:#fff;
+    border-radius:24px;
+    padding:36px 30px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 10px 0 rgba(0,0,0,0.2);
+    border:6px solid #d0d0d0;
+}
+
+.modal-check{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#3f9a2b;
+    color:#fff;
+    font-size:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:0 auto 16px;
+}
+
+.modal-card h3{
+    margin:0 0 18px;
+    font-size:20px;
+    font-weight:700;
+}
+
+.modal-home{
+    display:inline-block;
+    background:#f0b400;
+    color:#fff;
+    text-decoration:none;
+    padding:10px 18px;
+    border-radius:20px;
+    font-weight:700;
+}
+
+/* TOPPINGS SECTION */
 
 .breadcrumb{
 color:white;
@@ -776,11 +820,11 @@ padding-top:30px;
     background: #fff;
     border-radius:10px;
     min-width:20px;
-    max-height: 500px;
-    max-width: 900px;   
-    width: 100%;         
+    min-height: 520px;
+    max-width: 1100px;   
+    width: 70%;         
     margin: 0 auto;     
-    padding: 50px;
+    padding: 30px;
 }
 
 .h2{
@@ -844,26 +888,6 @@ width:22px;
 height:22px;
 }
 
-.buttons{
-text-align:right;
-margin-top:30px;
-}
-
-.buttons a{
-margin-right:20px;
-color:#2a7de1;
-text-decoration:none;
-}
-
-button{
-padding:8px 18px;
-border-radius:6px;
-font-size:15px;
-cursor:pointer;
-}
-
-.back{
-border:2px solid #2a7de1;
-background:white;
-color:#2a7de1;
+.box .buttons{
+    margin-top:30px;
 }
