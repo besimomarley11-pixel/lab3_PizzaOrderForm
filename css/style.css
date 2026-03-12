@@ -700,6 +700,13 @@ button{
     white-space:nowrap;
 }
 
+.fp-radio input[type="radio"]{
+    width:18px;
+    height:18px;
+    margin:0;
+    box-sizing:border-box;
+}
+
 .fp-delivery{
     flex-wrap:nowrap;
 }
@@ -799,20 +806,38 @@ gap:300px;
 }
 
 .column label{
-display:flex;
+display:grid;
+grid-template-columns:22px 1fr 60px;
 align-items:center;
-gap:15px;
+column-gap:12px;
 margin-bottom:25px;
 font-size:18px;
 }
 
 .column img{
 width:60px;
+height:60px;
+object-fit:contain;
+display:block;
+justify-self:end;
+}
+
+.column img.topping-img--mushroom{
+transform:scale(1.15);
+transform-origin:center;
 }
 
 input[type="checkbox"]{
 width:18px;
 height:18px;
+padding:0;
+margin:0;
+box-sizing:border-box;
+}
+
+.topping-checkbox--mushroom{
+width:22px;
+height:22px;
 }
 
 .buttons{
