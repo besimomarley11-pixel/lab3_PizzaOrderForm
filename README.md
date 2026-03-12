@@ -1,24 +1,44 @@
 # lab3_PizzaOrderForm
 
-Pizza Order Form by Marley Besimo, Mishli Valorrhi Postrado, and Leann Hershey Secillano.
+Pizza by the Slice, developed by Marley Besimo, Mishli Valorrhi Postrado, and Leann Hershey Secillano.
 
 This repository contains a multi-page Pizza Order Form for Laboratory 3:
 - Home page
-- Order Form
 - About Us
+- Order Form
 
 ## Folder Structure
 lab3_PizzaOrderForm
 - assets/
+  - background.png
+  - bacon.png
+  - bell-pepper.png
+  - cheese.png
+  - chef-leann.png
+  - chef-marley.png
+  - chef-mishli.png
+  - fast-delivery.png
+  - flavorful.png
+  - freshly-baked.png
+  - home.png
+  - marley.png
+  - mushroom.png
+  - olives.png
+  - onions.png
+  - order-form_background.png
+  - pepperoni.png
+  - pineapple.png
+  - pizza-large.png
+  - pizza-logo.png
+  - pizza-medium.png
+  - pizza-small.png
+  - pizza-xl.png
+  - white.png
 - css/
   - style.css
 - index.html
-- page-2.html
 - about-us.html
-- personal-details.html
-- pizza-selection.html
-- toppings.html
-- fulfillment-payment.html
+- order-form.html
 - README.md
 - LICENSE
   
@@ -30,11 +50,8 @@ lab3_PizzaOrderForm
 
 ## Page Access Flow
 - `index.html` -> Home page
-- `page-2.html` -> Features page
-- `personal-details.html` -> Personal Details page
-- `pizza-selection.html` -> Pizza Selection page
-- `toppings.html` -> Toppings page
-- `fulfillment-payment.html` -> Fulfillment & Payment page
+- `about us.html` -> About Us page
+- `order-form.html` -> Order Form page
 - Use the navigation bar at the top of each page to move between sections.
 
 ## Authors
