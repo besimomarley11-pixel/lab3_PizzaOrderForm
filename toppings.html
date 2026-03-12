@@ -40,7 +40,9 @@
 <section class="pd-container">
 
 <h1>ORDER FORM</h1>
-<p class="breadcrumb">Personal Details &gt; Pizza Selection &gt; <b>Toppings</b> &gt; Fulfillment &amp; Payment</p>
+<p class="breadcrumb">Personal Details &gt; Pizza Selection &gt; <b>Toppings</b></p>
+
+<form>
 
 <div class="box">
 
@@ -64,9 +66,9 @@ Pepperoni
 </label>
 
 <label>
-<input type="checkbox">
+<input type="checkbox" class="topping-checkbox--mushroom">
 Mushrooms
-<img src="assets/mushroom.png">
+<img src="assets/mushroom.png" class="topping-img--mushroom">
 </label>
 
 <label>
@@ -108,7 +110,7 @@ Pineapple
 </div>
 
 <div class="buttons">
-<a href="#">Reset</a>
+<button type="reset" class="reset">Reset</button>
 <a href="pizza-selection.html" class="back">&larr; Back</a>
 <a href="fulfillment-payment.html" class="next">Next &rarr;</a>
 </div>
@@ -116,6 +118,8 @@ Pineapple
 </div>
 
 </div>
+
+</form>
 
 </body>
 </html>

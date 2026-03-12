@@ -42,7 +42,7 @@
 <h1>ORDER FORM</h1>
 <p class="breadcrumb">Personal Details &gt; Pizza Selection &gt; Toppings &gt; <b>Fulfillment &amp; Payment</b></p>
 
-<form>
+<form id="fulfillment-form">
 
 <div class="form-box fp-box">
 <h2 class="form-title">Fulfillment &amp; Payment</h2>
@@ -84,7 +84,7 @@
 </fieldset>
 
 <div class="buttons fp-buttons">
-    <a href="#" type="button" class="reset">Reset</a>
+    <button type="reset" class="reset">Reset</button>
     <a href="toppings.html" button type="button" class="back">&larr; Back</a>
     <a href="index.html" button type="submit" class="next">Next &rarr;</a>
 </div>
@@ -94,6 +94,19 @@
 </form>
 
 </section>
+
+<script>
+const fulfillmentForm = document.getElementById("fulfillment-form");
+fulfillmentForm.addEventListener("reset", () => {
+    setTimeout(() => {
+        document.getElementById("address").value = "";
+        const deliveryOptions = fulfillmentForm.querySelectorAll('input[name="delivery"]');
+        deliveryOptions.forEach((option) => {
+            option.checked = false;
+        });
+    }, 0);
+});
+</script>
 
 </body>
 </html>

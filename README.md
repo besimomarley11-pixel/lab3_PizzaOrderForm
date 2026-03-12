@@ -7,10 +7,18 @@ This repository contains a multi-page Pizza Order Form for Laboratory 3:
 - Order Form
 - About Us
 
+## Recent Updates
+- Breadcrumbs now show only the current step and previous steps (not future steps).
+- Reset buttons are functional across order form pages.
+- Toppings layout aligned with consistent image sizing.
+- Mushroom topping image and checkbox size adjusted for visual consistency.
+- Fulfillment reset clears address and delivery selection.
+
 ## Folder Structure
 lab3_PizzaOrderForm
 - assets/
-   - fresh.png
+   - home-bg.png
+   - freshly-baked.png
    - pizza-logo.png
    - white.png
    - bacon.png
@@ -24,17 +32,25 @@ lab3_PizzaOrderForm
    - pepperoni.png
    - pineapple.png
    - freshly-baked.png 
+   - chef-leann.png
+   - chef-mishli.png
+   - chef-marley.png
 
 
 - fonts/
-   - the-seasons-regular.ttf
+   - test
+   - Track.otf
+
 - css/
    - style.css
 
 - index.html
 - order-form.html
 - about-us.html
+- draft-page-2.html
+- toppings.html
 - README.md
+- LICENSE
   
 ## How To Run/Access
 1. Open the project folder in VS Code or any IDE.
@@ -44,8 +60,8 @@ lab3_PizzaOrderForm
 
 ## Page Access Flow
 - `index.html` -> Home page
-- `order-form.html` -> Order form page
-- `about-us.html` -> about PIZZA by the SLICE, and Leann, Marley, and Mishli as collaborators
+- `personal-details.html` -> Personal Details page.
+- `about-us.html` -> About the Chefs: Leann, Marley, and Mishli.
 - Use the navigation bar at the top of each page to move between sections.
 
 ## Authors
